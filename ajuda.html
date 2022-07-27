@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<title>The Coffee's Beauty</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="shortcut icon" type="image.jpg" href="img/shortcut.png" sizes="32x32">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script language="javascript" src="form_script.js"></script>
+</head>
+
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				
+				<div class="navbar-header">
+					<!--Logo-->
+					<a href="the_coffee_beauty.html" alt= "the_coffee's_beauty-home" title="Home"><img id="logo" src="img/logo.png" height="70"></a>
+					<!--SMARTPHONE-->
+					<button type="button" style="margin-top: 25px" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_lista" aria-expanded="false">
+						<span style="background-color: #9bbd46" class="icon-bar"></span>
+						<span style="background-color: #9bbd46" class="icon-bar"></span>
+						<span style="background-color: #9bbd46" class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="menu_lista">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="link_menu"><a href="quem_somos.html">Quem somos</a></li>
+						<li class="link_menu"><a href="contatos.html">Contatos</a></li>
+						<li class="link_menu"><a href="ajuda.html">Ajuda</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</nav>
+
+	</header>
+
+
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-xs-12">
+
+					<ul class= "nav navbar-nav navbar-left">
+						<li class="link_menu"><a href="javascript:history.back()">Voltar</a></li>
+					</ul>
+
+					<div class="row">
+						<img src="img/quem_somos.png" align="left" style="height: 400px; width: 400px;">
+					</div>
+				</div>
+
+				<div class="col-md-7 col-xs-12">
+					<h2 align="center">Tem alguma dúvida ou gostaria de alguma dica? Deixe-nos sua solicitação, será um prazer colaborar com suas descobertas sobre o café ;)</h2>
+					
+					<br>
+
+					<form>
+						<label>Nome de Usuário</label>
+						<input id="nome" type="text" class="form-control" placeholder="Por favor, digite seu nome">
+
+						<br>
+
+						<label>Dúvidas e solicitações de dicas</label>
+						<textarea id="envio" class="form-control" placeholder="Deixe aqui sua solicitação ;)" rows="6" maxlength="300"></textarea>
+
+						<br>
+
+						<input type="submit" name="enviar" value="Enviar" class="btn btn-dark" onclick="valida()">
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6"><a href="the_coffee_beauty.html"><img id="logo" src="img/logo.png" height="70"></a></div>
+				<div class="col-md-2 lista_footer"><a href="quem_somos.html">Quem somos</a></div>
+				<div class="col-md-2 lista_footer"><a href="contatos.html">Contatos</a></div>
+				<div class="col-md-2 lista_footer"><a href="ajuda.html">Ajuda</a></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" align="right">
+					<p>© 2022 The Coffee's Beauty | Todos os direitos reservados. Construido por <a href="#">Keyla Cardoso</a>.</p>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	</footer>
+
+
+</body>
+</html>
